@@ -92,3 +92,26 @@ if __name__ == "__main__":
 
 
     print("Second commit")
+
+    def update_student(self):
+    sid = input("Enter Student ID to update: ")
+
+    for student in self.students:
+        if student.student_id == sid:
+            print("Leave blank to keep the current value.")
+
+            new_name = input(f"Name ({student.name}): ")
+            new_age = input(f"Age ({student.age}): ")
+            new_course = input(f"Course ({student.course}): ")
+
+            if new_name:
+                student.name = new_name
+            if new_age:
+                student.age = new_age
+            if new_course:
+                student.course = new_course
+
+            print("Student updated successfully!")
+            return
+
+    print("Student not found.")
