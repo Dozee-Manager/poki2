@@ -460,19 +460,3 @@ if __name__ == "__main__":
             new_name = input(f"Name ({student.name}): ")
             new_age = input(f"Age ({student.age}): ")
             new_course = input(f"Course ({student.course}): ")
-
-
-
-
-def sort_students(self):
-    if not self.students:
-        print("No students available.")
-        return
-
-    self.students.sort(key=lambda student: student.name.lower())
-    
-
-
-    
-
-
